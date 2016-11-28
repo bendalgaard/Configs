@@ -1,0 +1,46 @@
+[alias]
+	# up = "git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}.."
+	# up = "pull --ff-only --all -p"
+	# git config --global alias.up '!git remote update -p; git merge --ff-only @{u}'
+	
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+	amend = 'commit --amend'
+	ammend = 'commit --amend'
+	cp = cherry-pick
+	d = diff
+	deleted = ls-files --deleted
+	details = log -n1 -p --format=fuller
+	difff = diff --word-diff
+	graph = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+	ll = log --stat --abbrev-commit
+	logs = log --oneline --decorate
+	s = status --short
+	searchlogs = !git log --oneline | grep
+	today = log --stat --since=\"1 Day Ago\" --graph --pretty=oneline --abbrev-commit --date=relative
+	undo = reset HEAD~1 --mixed
+	up = "!git remote update -p; git merge --ff-only @{u}"
+	pulll = pull
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+[color]
+	ui = auto
+[core]
+	### IGNORE WINDOWS LINEFEEDS
+	#autocrlf = input
+[credential]
+	helper = wincred
+[fetch]
+	prune = true
+[format]
+	pretty = %Cred%h%Creset %aN -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset
+[merge]
+	tool = p4merge
+[remote "origin"]
+	prune = true
+[rerere]
+	### REMEMBER HOW I LAST HANDLED THIS MERGE CONFLICT
+	enabled = true
+[status]
+	short = true
+[user]
+	email = bendalgaard@test.com
+	name = bendalgaard

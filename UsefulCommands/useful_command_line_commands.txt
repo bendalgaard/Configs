@@ -1,0 +1,4 @@
+
+:: Create ls equivalent in Windows
+:: http://stackoverflow.com/questions/9362692/how-to-create-ls-in-windows-command-prompt
+echo dir %1 > %systemroot%\system32\ls.bat

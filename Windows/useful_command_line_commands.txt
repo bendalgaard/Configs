@@ -1,3 +1,0 @@
-
-:: Create ls equivalent in Windows
-echo dir %1 > %systemroot%\system32\ls.bat

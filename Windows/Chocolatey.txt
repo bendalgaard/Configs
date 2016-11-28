@@ -1,0 +1,5 @@
+- Install (CMD as administrator)
+    - https://chocolatey.org/install
+    - https://www.reddit.com/r/EtherMining/comments/3gqtpn/choco_is_not_recognized_as_an_internal_or/
+- Upgrade (CMD as administrator)
+    - choco upgrade chocolatey

@@ -1,0 +1,72 @@
+
+Show Differences:
+git log -p -2
+git diff HEAD^ HEAD
+git diff HEAD~2..HEAD~1
+git show ac30d2f
+
+Rebase:
+git rebase master
+
+Git Status:
+ssh git@<machine> info
+git clone git@<machine>:<Project>
+
+Edit commit message (http://stackoverflow.com/a/179147):
+git commit --amend
+
+Differences between branches:
+git log origin/master..HEAD
+git shortlog master..branch
+git diff origin/master..HEAD
+git diff branch_1..branch_2
+
+Check if merged:
+git branch --merged master
+
+Show Commits:
+git show 358691a81da218f175d3bf43ee6268e138d6ead5
+
+Search Commit messages:
+git log --all --grep='DTDP'
+
+Delete Local Branches that have been merged (http://stackoverflow.com/a/6127884): 
+git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d
+
+
+Delete Local Branch:
+git branch -D <branchName>
+
+Delete Remote Branch:
+git push origin :<branchName>
+git push origin --delete <branchName>
+
+Delete Remote Branch:
+git fetch -p origin
+git push origin --delete <branch> OR git push origin :<branch>
+
+Can't checkout branch (review_unittest_generic_file_downloader):
+git remote show origin
+git pull origin review_unittest_generic_file_downloader
+git branch -a
+git checkout review_unittest_generic_file_downloader
+
+Alias:
+git config --global alias.logs 'log --oneline --decorate'
+git config --global alias.difff 'diff --word-diff'
+git config --global alias.d 'diff'
+git config --global alias.s 'status --short'
+git config --global alias.deletem 'branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+
+MergeTool:
+git mergetool
+git config --global merge.tool p4merge
+
+Config:
+git config core.autocrlf false
+git config status.short true
+git config --global remote.origin.prune true
+
+Other:
+if [[ -n $(git status --porcelain) ]]; then echo "repo is dirty"; fi
+
