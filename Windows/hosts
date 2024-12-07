@@ -1,0 +1,67 @@
+﻿# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+
+# Productivity Block List
+
+# Videos
+#127.0.0.1 youtube.com www.youtube.com
+
+# Shopping
+#127.0.0.1 reverb.com www.reverb.com
+#127.0.0.1 sweetwater.com www.sweetwater.com        			#Also causes Synchrony credit card login to fail
+#127.0.0.1 chicagomusicexchange.com www.chicagomusicexchange.com
+#127.0.0.1 amazon.com www.amazon.com smile.amazon.com www.smile.amazon.com
+#127.0.0.1 forums.woodnet.net www.forums.woodnet.net
+#127.0.0.1 sawmillcreek.org
+
+# Social media
+127.0.0.1 stocktwits.com www.stocktwits.com
+127.0.0.1 twitter.com
+127.0.0.1 facebook.com www.facebook.com
+#127.0.0.1 reddit.com www.reddit.com old.reddit.com www.old.reddit.com
+127.0.0.1 news.ycombinator.com
+
+
+# Games
+127.0.0.1 2048game.com www.2048game.com
+127.0.0.1 2048.org www.2048.org
+127.0.0.1 coolmathgames.com
+127.0.0.1 crazygames.com
+127.0.0.1 mathsisfun.com www.mathsisfun.com
+127.0.0.1 mathplayground.com www.mathplayground.com
+127.0.0.1 ovolve.github.io
+127.0.0.1 play2048.co www.play2048.co
+127.0.0.1 poki.com
+
+
+# Financial
+#127.0.0.1 mint.com
+
+
+
+# Added by Docker Desktop
+192.168.86.45 host.docker.internal
+192.168.86.45 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section

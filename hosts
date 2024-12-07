@@ -1,0 +1,51 @@
+127.0.0.1	localhost
+127.0.1.1	ben-All-Series
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+# PRODUCTIVITY
+
+# Videos
+#127.0.0.1 youtube.com www.youtube.com
+127.0.0.1 netflix.com www.netflix.com
+
+# Social media
+127.0.0.1 stocktwits.com www.stocktwits.com
+127.0.0.1 twitter.com
+127.0.0.1 facebook.com www.facebook.com
+127.0.0.1 reddit.com www.reddit.com 
+#127.0.0.1 old.reddit.com www.old.reddit.com
+127.0.0.1 news.ycombinator.com
+
+
+# Shopping
+#127.0.0.1 amazon.com www.amazon.com smile.amazon.com www.smile.amazon.com
+127.0.0.1 reverb.com www.reverb.com
+#127.0.0.1 sweetwater.com www.sweetwater.com        			#Also causes Synchrony credit card login to fail
+127.0.0.1 chicagomusicexchange.com www.chicagomusicexchange.com
+127.0.0.1 forums.woodnet.net www.forums.woodnet.net
+127.0.0.1 sawmillcreek.org
+
+
+# Games
+127.0.0.1 2048game.com www.2048game.com
+127.0.0.1 2048.org www.2048.org
+127.0.0.1 coolmathgames.com
+127.0.0.1 crazygames.com
+127.0.0.1 mathsisfun.com www.mathsisfun.com
+127.0.0.1 mathplayground.com www.mathplayground.com
+127.0.0.1 ovolve.github.io
+127.0.0.1 play2048.co www.play2048.co
+127.0.0.1 poki.com
+
+
+# ADS and SPAM
+
+
+
